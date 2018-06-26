@@ -1,0 +1,28 @@
+{
+ "name": "spankygram",
+ "version": "1.0.0",
+ "description": "instagram client",
+ "main": "server.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node server.js"
+ },
+ "engines": {
+  "node": "8.10.0"
+ },
+ "now": {
+  "engines": {
+   "node": "8.10.0"
+  }
+ },
+ "keywords": [
+  "instagram"
+ ],
+ "author": "simonlee",
+ "license": "MIT",
+ "dependencies": {
+  "ejs": "^2.6.1",
+  "express": "^4.16.3",
+  "instagram-node": "^0.5.8"
+ }
+}

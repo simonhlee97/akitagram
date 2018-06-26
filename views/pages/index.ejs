@@ -1,0 +1,41 @@
+<html>
+
+<head>
+	<% include ../partials/head %>
+	<link rel="stylesheet" type="text/css" href="/style.css" ></link>
+</head>
+
+<body class="container">
+    <header>
+        <% include ../partials/header %>
+	</header>
+
+    <main>
+        
+        <div class="wrapper">
+            <% grams.forEach(function(gram) { %>
+                <div class="box instagram-pic">
+                    <a href="<%= gram.link %>" target="_blank">
+                        <img src="<%= gram.images.standard_resolution.url %>" class="img-responsive"></a>
+                    <div class="instagram-bar">
+                        <div class="likes">
+                            <span class="glyphicon glyphicon-heart"></span>
+                            <%= gram.likes.count %>
+                        </div>
+                        <div class="comments">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <%= gram.comments.count %>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+</body>
+
+</html>

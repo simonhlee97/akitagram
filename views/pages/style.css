@@ -1,0 +1,110 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #f0f0f0;
+}
+
+#lastmodify {
+	margin-top: 9px;
+	padding-top: 9px;
+}
+
+/* Begin CSS GRID */
+.wrapper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+
+.box {
+    background-color: #050c33;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    color: #FDDA13;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* .box:nth-child(odd) {
+    background-color: #bf08b9;
+    color: #e8f353;
+} */
+/* end of CSS GRID */
+
+footer { 
+    padding:50px;
+}
+.instagram-pic { 
+    position:relative; 
+    padding:30px; 
+    overflow:hidden;
+}
+
+
+.instagram-bar {
+    position:absolute;
+    bottom:20px;
+    width:100%;
+    left:0;
+    padding-left:30px;
+    padding-right:30px;
+    /* color:rgb(255, 0, 0); */
+}
+
+.instagram-bar span {
+     margin-right:5px;
+}
+
+.instagram-bar .likes {
+    float:left;
+}
+
+.instagram-bar .comments {
+    float:right;
+}
+
+/* MODAL CSS */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid rgb(22, 3, 109);
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    cursor: pointer;
+}
